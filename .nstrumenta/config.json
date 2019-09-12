@@ -1,0 +1,58 @@
+{
+  "modules": [
+    {
+      "type": "algorithm",
+      "name": "driving",
+      "folder": "src"
+    },
+    {
+      "type": "dataflows",
+      "folder": "dataflows"
+    },
+    {
+      "type": "sandbox",
+      "name": "viewer-timeseries",
+      "folder": "viewer-timeseries",
+      "entry": "index.html",
+      "dataflow": {
+        "graph": {
+          "data-query": {
+            "type": "data-query",
+            "options": {
+              "orderBy": [
+                "lastModified",
+                "desc"
+              ],
+              "limit": 1
+            }
+          },
+          "data-loader": {
+            "type": "data-loader",
+            "dependencies": [
+              "data-query"
+            ]
+          },
+          "algorithm-query": {
+            "type": "algorithm-query",
+            "options": {
+              "algorithmId": "driving",
+              "orderBy": [
+                "lastModified",
+                "desc"
+              ],
+              "limit": 1
+            }
+          },
+          "algorithm-runner": {
+            "type": "algorithm-runner",
+            "dependencies": [
+              "data-loader",
+              "algorithm-query"
+            ]
+          }
+        }
+      }
+    }
+  ],
+  "port": 8080
+}

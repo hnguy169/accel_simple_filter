@@ -1,0 +1,28 @@
+{
+  "parameters": [
+    {
+      "id": "dsox_data.threshold.x",
+      "max": 20,
+      "min": -20,
+      "name": "dsox threshold x",
+      "step": 0.1,
+      "value": 0
+    },
+    {
+      "id": "dsox_data.threshold.y",
+      "max": 20,
+      "min": -20,
+      "name": "dsox threshold y",
+      "step": 0.1,
+      "value": 0
+    },
+    {
+      "id": "dsox_data.threshold.z",
+      "max": 20,
+      "min": -20,
+      "name": "dsox threshold z",
+      "step": 0.1,
+      "value": 5
+    }
+  ]
+}
