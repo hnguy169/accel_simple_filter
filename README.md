@@ -1,1 +1,1 @@
-# Nstrumenta project for Pedestrian Dead Reckoning
+# Nstrumenta project example for code, data and sandbox use
