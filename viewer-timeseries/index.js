@@ -236,7 +236,7 @@ function renderFiles() {
 
 function getPlotName(id) {
   if (labels.hasOwnProperty(id)) {
-    return labels[id].name;
+    //return labels[id].name;
   }
   return id;
 }
