@@ -62,12 +62,12 @@ const labels = {
   1: {
     name: 'Accelerometer',
     type: 'input',
-    traces: ['Acc x', 'Acc y', 'TRACE Z']
+    traces: ['TRACE x', 'TRACE y', 'TRACE Z']
   },
   2: {
     name: 'Magnetometer',
     type: 'input',
-    traces: ['Mag x', 'Mag y', 'Mag z']
+    traces: ['Magitude x', 'Mag y', 'Mag z']
   },
   4: {
     name: 'Gyro',
