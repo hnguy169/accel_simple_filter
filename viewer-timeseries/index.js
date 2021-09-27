@@ -72,7 +72,7 @@ const labels = {
   4: {
     name: 'Gyro',
     type: 'input',
-    traces: ['Gyro x', 'Gyro Y', 'Gyro z']
+    traces: ['Gyro x', 'Gyro Y', 'gyro z']
   },
   6: {
     name: 'Pressure',
